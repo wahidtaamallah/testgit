@@ -1,0 +1,98 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./src/54787323-résumé-tête-numérique-du-site-web-bannière-tecnology-fond.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+
+
+header {
+        display:flex;
+        background-color: #262626;
+        color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+        justify-content: space-between;
+        align-items: baseline;
+        opacity: 0.5;
+    }
+    
+h1{
+    background-color: #262626;
+    color: white;
+    float: left;
+    margin: 30px;
+   
+}
+
+ ol{    
+    padding: 10px;
+    display:flex;
+    list-style: none;
+    
+}
+ol li{
+    padding: 10px ;
+   
+    
+}
+ ol li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;  
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin:5px;
+}
+ ol li:hover{
+    background-color:gray;
+    transition: 0.9s;
+}
+@media only screen and (max-width:767px){
+ ol {
+    height:230px;
+    flex-direction:column;
+    text-align:center;
+
+}
+}
+.sub-menu-1{
+    display: none;
+}
+ol li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #262626;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+ol li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+ol li:hover .sub-menu-1 ul li{
+    width: 150px;
+   padding: 10px;
+   border-bottom: 1px dotted #fff;
+   background: transparent;
+border-radius: 0;
+text-align: left;
+}
+ol li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+ol li:hover .sub-menu-1 ul li a:hover {
+    color: thistle;
+}
+
+
+
+
+
